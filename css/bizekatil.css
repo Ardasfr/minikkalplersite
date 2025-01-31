@@ -1,0 +1,156 @@
+/* Navbar */
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    height: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-custom .nav-link {
+    color: #555;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  
+  .navbar-custom .nav-link i {
+    margin-right: 5px;
+  }
+  .navbar-custom .nav-link.active {
+    color:#a61e25;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #a61e25;
+  }
+  .navbar-custom .nav-link.active {
+    color:#a61e25;
+  }
+  
+  a.btn-custom {
+    background-color: #a61e25;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+a.btn-custom:hover {
+    background-color: #a61e25;
+  }
+
+button.btn-outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+button.btn-outline {
+    margin-right: 5px;
+    border-color: #a61e25; 
+  color: #a61e25; 
+  }
+
+button.btn-outline:hover {
+    background-color: #a61e25; 
+    color: white; /* Hover durumunda beyaz yazı rengi */
+  }
+.navbar-brand {
+    margin-left: -15px; /* Soldan taşırmak için negatif değer */
+    transition: color 0.3s ease; /* Renk geçiş animasyonu */
+}
+
+.navbar-brand i {
+  color: #a61e25 !important; /* İkonun rengi */
+  }
+
+a.btn.btn-primary {
+  color: white;
+  border: #a61e25;
+  background-color: #a61e25;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+
+/* WhatsApp Butonu */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip */
+.whatsapp-tooltip {
+  position: absolute;
+  bottom: 60px; /* Butonun üstünde görünmesi için ayarlandı */
+  right: 0;
+  background-color: dimgray;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp:hover .whatsapp-tooltip {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Tooltip görünme animasyonu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*Footer*/
+footer {
+    background-color: #a61e25;
+    color: white;
+    padding: 10px 0;
+    height: 80px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.footer-links a:hover {
+    color: white;
+}
