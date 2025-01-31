@@ -67,6 +67,55 @@ a.btn.btn-primary {
   background-color: #a61e25;
 }
 
+/* Navbar Responsive Düzenlemeleri */
+@media (max-width: 768px) {
+  .navbar-custom {
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 8px 0;
+  }
+}
+
+/* Carousel Responsive Düzenlemeleri */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 16px;
+    top: 10%;
+    padding: 10px;
+  }
+}
+
+/* WhatsApp Tooltip Düzenlemeleri */
+@media (max-width: 768px) {
+  .whatsapp-tooltip {
+    font-size: 0.8rem;
+    bottom: 70px;
+    right: -15px;
+  }
+}
+
+/* Footer Responsive Düzenlemeleri */
+@media (max-width: 768px) {
+  .footer-links a {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+
 /* WhatsApp Butonu */
 .whatsapp {
   position: fixed;

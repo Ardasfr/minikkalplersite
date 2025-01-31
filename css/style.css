@@ -8,10 +8,10 @@
 }
 
 .navbar-brand i {
-color: #a61e25 !important; /* İkonun rengi */
+  color: #a61e25 !important;
 }
 
-.navbar-brand{
+.navbar-brand {
   margin-left: -15px;
 }
 
@@ -30,7 +30,7 @@ color: #a61e25 !important; /* İkonun rengi */
 }
 
 .btn-custom {
-  background-color:#a61e25;
+  background-color: #a61e25;
   color: white;
   font-weight: bold;
   border-radius: 20px;
@@ -42,18 +42,39 @@ color: #a61e25 !important; /* İkonun rengi */
   background-color: #a61e25;
 }
 
- /* Carousel */
- .carousel-caption {
-  position: absolute;
-  top: 1%;
-  font-size: 25px;
+/* Carousel */
+.carousel-caption {
+  top:10%;
+  margin-top: 20px;
+  height:max-content;
+  position: relative;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.8);
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
 
-/* WhatsApp Butonu */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 16px;
+    top: 10%;
+  }
+  .navbar-custom {
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-brand {
+    margin-left: 0;
+  }
+}
+
+/* WhatsApp Button */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -76,10 +97,9 @@ color: #a61e25 !important; /* İkonun rengi */
   transform: scale(1.1);
 }
 
-/* Tooltip */
 .whatsapp-tooltip {
   position: absolute;
-  bottom: 60px; /* Butonun üstünde görünmesi için ayarlandı */
+  bottom: 60px;
   right: 0;
   background-color: dimgray;
   color: #fff;
@@ -96,7 +116,6 @@ color: #a61e25 !important; /* İkonun rengi */
   animation: fadeIn 0.3s ease;
 }
 
-/* Tooltip görünme animasyonu */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -108,20 +127,34 @@ color: #a61e25 !important; /* İkonun rengi */
   }
 }
 
-/*Footer*/
+/* Footer */
 footer {
   background-color: #a61e25;
   color: white;
   padding: 10px 0;
-  height: 80px;
+  height: auto;
+  margin: 0px;
   text-align: center;
   font-size: 0.9rem;
 }
+
 .footer-links a {
   color: white;
   text-decoration: none;
   padding: 0 10px;
 }
+
 .footer-links a:hover {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    display: block;
+  }
+
+  .footer-links a {
+    display: block;
+    margin-bottom: 5px;
+  }
 }
